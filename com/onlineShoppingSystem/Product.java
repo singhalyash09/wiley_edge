@@ -1,5 +1,8 @@
 package com.onlineShoppingSystem;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Product {
     String productName;
     int productId;
