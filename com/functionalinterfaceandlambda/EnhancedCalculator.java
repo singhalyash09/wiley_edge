@@ -1,7 +1,7 @@
 package com.functionalinterfaceandlambda;
 public class EnhancedCalculator {
-    static int calculate(int a , int b , Operation op){
-        return op.operate(a,b);
+    static int calculate(int a , int b , StringOperation op){
+        return op.operation(a,b);
     }
     public static void main(String[] args) {
         var sum = calculate(2,3,(a,b) -> a+b);
@@ -16,6 +16,6 @@ public class EnhancedCalculator {
         System.out.println("Maximum number : "+max);
     }
 }
-interface Operation {
-    int operate(int a, int b);
+interface StringOperation {
+    int operation(int a, int b);
 }
